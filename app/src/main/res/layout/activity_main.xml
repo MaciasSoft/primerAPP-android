@@ -1,0 +1,66 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTROL DE FACTURAS"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="#c60"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+
+        android:id="@+id/tvTitulo"
+        />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+
+        android:id="@+id/btnGuardar"
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="salir"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/btnGuardar"
+        android:layout_alignBaseline="@id/btnGuardar"
+        android:id="@+id/btnSalir"
+
+        />
+
+
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/etxtCosto"
+
+
+        />
+
+    <EditText
+        android:id="@+id/etxtCosto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+
+        android:layout_above="@id/btnGuardar"/>
+
+
+</RelativeLayout>
